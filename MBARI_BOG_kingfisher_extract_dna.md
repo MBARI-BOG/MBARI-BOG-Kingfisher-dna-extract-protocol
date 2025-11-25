@@ -39,8 +39,8 @@ pool_dna_num: not applicable
 nucl_acid_ext_method_additional: not applicable
 ---
 
+# PROTOCOL WRITING IN PROGRESS
 # Environmental DNA (eDNA) Extraction using KingFisher
-
 ## PROTOCOL INFORMATION
 
 ### Minimum Information about an Omics Protocol (MIOP)
@@ -118,15 +118,11 @@ nucl_acid_ext_method_additional: not applicable
 
 ### Summary
 
-test
-{{page.samp_vol_we_dna_ext}}
-
-
-This protocol is used for [DNA extraction](analyses) of [sea water](environmental_medium) eDNA samples from Sterivex filters using contents of a [ZymoBIOMICS 96 Magbead DNA Kit](nucl_acid_ext_kit) and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of [NOAA's Atlantic Oceanographic and Meteorological Laboratory](publisher).
+KingFisher Flex robot
 
 ### Method description and rationale
 
-This protocol is optimized for high throughput DNA extractions of Sterivex filters. It is easily reproducible and generates sufficient DNA yields while minimizing contamination and time requirements through the use of a KingFisher and optional use of an Opentrons OT-2 Pipetting Robot.
+This protocol is optimized for high throughput DNA extractions of flat PVDF 25mm diameter filters.
 
 ### Spatial coverage and environment(s) of relevance
 
