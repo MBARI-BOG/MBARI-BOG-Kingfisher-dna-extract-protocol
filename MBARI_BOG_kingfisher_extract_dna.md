@@ -15,7 +15,7 @@ skills_required: sterile technique, pipetting skills, standard molecular techniq
 time_required: 300
 personnel_required: 1
 language: en
-issued: 2025-11-25
+issued: 2026-09-22
 audience: scientists
 publisher: Monterey Bay Aquarium Research Institute
 hasVersion: 1
@@ -23,17 +23,17 @@ license: CC0 1.0 Universal
 maturity level: mature
 
 # FAIRe terms
-samp_vol_we_dna_ext: 1000
-samp_vol_we_dna_ext_unit: mL
+samp_vol_we_dna_ext: 500
+samp_vol_we_dna_ext_unit: µL
 nucl_acid_ext_lysis: physical
-nucl_acid_ext_sep: centrifugation
+nucl_acid_ext_sep: magnetic beads
 nucl_acid_ext: https://files.zymoresearch.com/protocols/_d4302_d4306_d4308_zymobiomics-96_magbead_dna_kit.pdf
 nucl_acid_ext_kit: ZymoBIOMICS 96 Magbead DNA Kit
-nucl_acid_ext_modify: # Filters were lysed with 1000 uL of ZymoBIOMICS Lysis Solution, use of KingFisher Flex Purification System for bead cleanup and final elution
+nucl_acid_ext_modify: Standard protocol is for extraction of 200 µL of lysed sample. We modified the KingFisher protocol to extract a total of 500 µL lysed sample across two plates.
 dna_cleanup_0_1: 1.0
 dna_cleanup_method: ZymoBIOMICS 96 Magbead DNA Kit
 concentration: not applicable
-concentration_method: VarioSkan Microplate Reader, Quant-iT dsDNA Assay Kit High Sensitivity
+concentration_method: Microplate Reader, Quant-iT dsDNA Assay Kit High Sensitivity
 ratioOfAbsorbance260_280: not applicable
 pool_dna_num: not applicable
 nucl_acid_ext_method_additional: not applicable
@@ -78,7 +78,7 @@ nucl_acid_ext_method_additional: not applicable
 
 | PROTOCOL NAME | LINK | VERSION | RELEASE DATE |
 | ------------- | ------------ | ------------ | ---------- |
-| Environmental DNA (eDNA) 12S Metabarcoding PCR Protocol (with Platinum SuperFi II Taq) V.3  |  [https://github.com/MBARI-BOG/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol/blob/main/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol.md](https://github.com/MBARI-BOG/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol/blob/main/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol.md) | 3.0 | yyyy-mm-dd   | Internal      |
+| Environmental DNA (eDNA) 12S Metabarcoding PCR Protocol (with Platinum SuperFi II Taq) V.3 [Previous protocol] |  [https://github.com/MBARI-BOG/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol/blob/main/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol.md](https://github.com/MBARI-BOG/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol/blob/main/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol.md) | 3.0 | yyyy-mm-dd   | Internal      |
 | Content Cell  | Content Cell | Content Cell | yyyy-mm-dd   | Content Cell      |
 
 #### External Protocols
@@ -95,7 +95,7 @@ nucl_acid_ext_method_additional: not applicable
 
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
-| 1.0.0 | 2025-11-25 | Initial release |
+| 1.0.0 | 2026-09-22 | Initial release |
 
 ### Acronyms and Abbreviations
 
@@ -122,7 +122,7 @@ KingFisher Flex robot
 
 ### Method description and rationale
 
-This protocol is optimized for high throughput DNA extractions of flat PVDF 25mm diameter filters.
+This protocol is optimized for high throughput DNA extractions of flat PVDF & GFF 25mm diameter filters.
 
 ### Spatial coverage and environment(s) of relevance
 
@@ -142,58 +142,46 @@ Basic molecular biology training (including sterile technique, pipetting) is req
 
 ### Time needed to execute the procedure
 
-Extracting DNA from 94 Sterivex samples takes about 5 hours ([300](time_required) minutes) including KingFisher run time.
+Extracting DNA from 91 25 mm PVDF/GFF samples takes about 5 hours ([300](time_required) minutes) including KingFisher run time.
 
 ## EQUIPMENT
 
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment** |
-| Vortex | Vortex Genie | Scientific Industries | as many as possible | # of vortexes will affect run time of protocol |
-| Vortex Adapter Plate | Vortex Adapter for 6 x 5ml tubes| QIAGEN | depends on # of vortexes | # of vortex adapter plates will affect run time |
-| Centrifuge | Centrifuge 5425 R - Microcentrifuge | Eppendorf | 1 | Can be substituted with generic |
+| TissueLyser | TissueLyser II | QIAGEN | 2 min @ 30 hz |   |
+| TissueLyser adapter plates |TissueLyser Adapter Set 2 x 24| QIAGEN | 2 |   |
+| Centrifuge | Centrifuge 5430 | Eppendorf | 1 | Can be substituted with generic |
 | Opentrons OT-2 Robot | OT-2 Pipetting Robot | Opentrons | 1 | Optional equipment for protocol; 8-Channel pipette recommended |
 | KingFisher | KingFisher Flex Purification System | ThermoFisher | 1 | |
-| 100-1000 uL Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
-| 10-100 uL 8 Channel Pipette | Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
-| 1 uL-10 mL Repeater Pipette | Repeater M4 Pipette, 1 uL-10 mL Dispensing Volume for use with Combitips Advanced Syringe Tips | Can be substituted with any accurate pipette, optional for filling KingFisher plates |
+| 100-1250 uL Pipette | Integra adjustable pipette | Integra | 1 | Can be substituted with any accurate pipette |
+| 20-200 uL 8 Channel Pipette | Integra adjustable pipette | Integra | 1 | Can be substituted with any accurate pipette |
+| 100-1250 8 Channel Adjustable Spacer Pipette | Integra VOYAGER Adjustable Spacer Pipette | Can be substituted with any accurate pipette |
 | Tube Racks | 2 mL tube 96-well tube racks | Generic | 1 | Can be any brand, must fit 2 mL tubes |
-| Wash bottles | Safety wash bottles 500 mL for EtOH | Generic | 1 | Can be substituted with generic |
+| PCR Plate Sealer | PX1 PCR Plate Sealer | BIO-RAD | 1 | Can be substituted with generic |
 | **Consumable equipment** |
-| Sterivex Filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | 94 | |
-| DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 94 | (mL) only required if Sterivex are not pre-loaded or for adding an extraction blank |
-| Zirconia Beads | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 94 | only required if Sterivex are not pre-loaded or for adding an extraction blank |
-| Filter Cap (Male) | MasterFlex Male Luer Lock Plug | VWR | 94 | Can be substituted with generic |
-| Filter Cap (Female) | MasterFlex Female Luer Thread Style Cap | VWR | 94 | Can be substituted with generic |
-| Parafilm | Parafilm M Lab Film | Generic | 1 | (roll) Can substitute with generic brand |
-| Syringes | BD Disposable Syringes with Luer-Lock Tips, 5 mL | Fisher Scientific | 94 | Can be substituted with generic as long as they twist onto Sterivex |
-| Microcentrifuge Tubes | NEST 2.0 mL Microcentrifuge Tube | Opentrons | 94 | Can be substituted with generic|
-| KingFisher 96 deep-well plate | KingFisher Plastics for 96 deep-well format | ThermoFisher | 7 | |
-| Kingfisher 96 well microplate (200uL) | KingFisher Plastics for 96 standard and PCR formats | ThermoFisher | 1 | |
+| PVDF Filter | Millipore Durapore, 0.22µm pore size, 25mm filter GVWP02500 | Millipore Sigma | 91 | |
+| DNA/RNA Shield Collection Tubes | Zymo DNA/RNA Shield Collection Tubes R1103 | Zymo Research | 91 | Samples are stored in these tubes after collection/filtration |
+| KingFisher 96 deep-well plate | KingFisher Plastics for 96 deep-well format | ThermoFisher | 6 | |
 | KingFisher 96 tip comb for deep-well magnets | Kingfisher Flex 96 Deep-Well Tip Combs | ThermoFisher | 1 | |
-| 96-well PCR plate | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
-| Aluminum Foil Sealing Tape | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 3 | Can be substituted with generic |
+| 96-well PCR plate | Hard-Shell PCR Plates 96-well, thin wall | BIO-RAD | 2 | Can be substituted with generic |
+| Plate Seals | Peelable Foil Heat Seal cat#1814045 | BIO-RAD | 2 | Can be substituted with generic |
 | 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 2 | (boxes) Can be substituted with generic |
 | 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 | (box) Can be substituted with generic |
 | 2.5 mL Combitips | Combitips advanced, 2.5 mL, green, colorless tips | Eppendorf | 1 | (tip) Optional for MagBinding Beads with repeater pipette |
 | 10 mL Combitips | Combitips advanced, 10 mL, orange, colorless tips | Eppendorf | 3 | (tips) Optional for KF plate prep with repeater pipette |
-| Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 | (box) Can be substituted with generic |
+| Gloves | Nitrile Gloves, Exam Grade, Powder-free | KimTech | 1 | (box) Can be substituted with generic |
 | Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 | (box) Can be substituted with generic |
-| **Opentrons Consumables** |
-| 12-Well Reservoir, 15 mL | NEST 12-Well Reservoir, 15 mL | Opentrons | 1 | optional for KF plate prep on OT-2 Robot |
-| Deep Single-Well Reservoir, 300 mL | Nalgene Disposable Polypropylene Robotic Reservoirs | ThermoFisher | 2 | optional for KF plate prep on OT-2 Robot |
-| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 | (box) Optional for KF plate prep on OT-2 Robot |
 | **Chemicals** |
 | 70% EtOH | Molecular bio grade ethanol | Generic | 1 | (Wash Bottle) only used for cleaning lab surfaces |
 | **ZymoBIOMICS 96 MagBead DNA Kit** |
-| Lysis Solution | ZymoBIOMICS Lysis Solution | Zymo Research | 94 mL | (mL) Can be used in place of DNA/RNA Shield, only required if Sterivex are not pre-loaded or for adding an extraction blank |
-| MagBinding Buffer | ZymoBIOMICS MagBinding Buffer | Zymo Research | 57.6 | (mL) |
+| Proteinase K | Proteinase K w/ Storage Buffer Set | Zymo Research | 3,640 | (uL) |
+| MagBinding Buffer | ZymoBIOMICS MagBinding Buffer | Zymo Research | 115.2 | (mL) |
 | MagBinding Beads | ZymoBIOMICS MagBinding Beads | Zymo Research | 2.4 | (mL) |
 | MagWash 1 | ZymoBIOMICS MagWash 1 | Zymo Research | 48 | (mL) |
 | MagWash 2 | ZymoBIOMICS MagWash 2 | Zymo Research | 86.4 | (mL) |
-| DNAse/RNAse Free Water | ZymoBIOMICS DNAse/RNAse Free Water | Zymo Research | 14.4 | (mL) |
+| DNAse/RNAse Free Water | ZymoBIOMICS DNAse/RNAse Free Water | Zymo Research | 11.04 | (mL) |
 
-- Opentrons Consumables: If using Opentrons OT-2 Robot for KF Plate Prep.
 
 - Description: E.g., "filter".
 - Product Name and Model: Provide the official name of the product.
@@ -209,7 +197,7 @@ Extracting DNA from 94 Sterivex samples takes about 5 hours ([300](time_required
 #### Preparation
 
 1. Sterilize all workspaces and durable equipment with 70% EtOH.
-2. Label 94 2-ml microcentrifuge tubes 1 through 94 and place in 96-well tube rack.
+2. Label 91 DNA/RNA Shield Collection/Lysis tubes 1 through 94 and place in 96-well tube rack.
 3. Fill large ice bin with ice.
 
 #### Extraction
