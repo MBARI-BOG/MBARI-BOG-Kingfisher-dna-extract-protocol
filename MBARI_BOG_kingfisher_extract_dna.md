@@ -142,7 +142,7 @@ Basic molecular biology training (including sterile technique, pipetting) is req
 
 ### Time needed to execute the procedure
 
-Extracting DNA from 91 25 mm PVDF/GFF samples takes about 5 hours ([300](time_required) minutes) including KingFisher run time.
+Extracting DNA from 91 25 mm PVDF/GFF samples takes about 5 hours ([300](time_required) minutes) over two days (overnight incubation needed) including KingFisher run time.
 
 ## EQUIPMENT
 
@@ -166,8 +166,8 @@ Extracting DNA from 91 25 mm PVDF/GFF samples takes about 5 hours ([300](time_re
 | KingFisher 96 tip comb for deep-well magnets | Kingfisher Flex 96 Deep-Well Tip Combs | ThermoFisher | 1 | |
 | 96-well PCR plate | Hard-Shell PCR Plates 96-well, thin wall | BIO-RAD | 2 | Can be substituted with generic |
 | Plate Seals | Peelable Foil Heat Seal cat#1814045 | BIO-RAD | 2 | Can be substituted with generic |
-| 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 2 | (boxes) Can be substituted with generic |
-| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 | (box) Can be substituted with generic |
+| 1000µL Filter Tips | Integra VIAFLO, 1250µL | Integra | 5 | (boxes) Can be substituted with generic |
+| 200µL Filter Tips | Integra VIAFLO, 200µL | Integra | 3 | (box) Can be substituted with generic |
 | 2.5 mL Combitips | Combitips advanced, 2.5 mL, green, colorless tips | Eppendorf | 1 | (tip) Optional for MagBinding Beads with repeater pipette |
 | 10 mL Combitips | Combitips advanced, 10 mL, orange, colorless tips | Eppendorf | 3 | (tips) Optional for KF plate prep with repeater pipette |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | KimTech | 1 | (box) Can be substituted with generic |
@@ -197,80 +197,46 @@ Extracting DNA from 91 25 mm PVDF/GFF samples takes about 5 hours ([300](time_re
 #### Preparation
 
 1. Sterilize all workspaces and durable equipment with 70% EtOH.
-2. Label 91 DNA/RNA Shield Collection/Lysis tubes 1 through 94 and place in 96-well tube rack.
-3. Fill large ice bin with ice.
-
+2. Create a plate template organizing the samples into wells of a 96 well plate.
+3. Resuspend powdered Proteinase K according to manufacture direction (e.g., 135 mg Proteinase K powder + 6.5 mL Proteinase K Storage Buffer).
+  
 #### Extraction
+Sample Lysis (day 1)
+1. Remove preserved filter from freezer, order in tube rack based on the template, and bring to room temperature.
+2. Make sure caps are tightly sealed. Transfer samples to the Tissuelyser adapters (24 per adapter) and homogenize samples at 30 hz for 2 minutes. (This will be done in two batches).
+3. After homogenization, centrifuge the DNA/RNA Shield collection tubes (samples) at ≥ 10,000xg for 1 minute.
+4. Return the samples to the tube rack in the correct order.
+5. Carefully remove caps of the DNA/RNA Shield collection tubes and add 40 uL of Proteinase K to each samples. Carefully replace caps and tighten well.
+6. Place sample tubes in a secured rack and incubate at 55 C overnight with a slow rotation.
 
-1. Remove Sterivex from freezer and immediately place on ice while randomizing the order of the filters. 
-2. If Sterivex are wrapped in aluminum foil, remove foil and ensure all Sterivex have filter caps on either end (male and female).
-3. If Sterivex do not already contain zirconia beads and DNA/RNA Shield, add as follows:
+Run Kingfisher (day 2)
+7. Take samples out of the incubator and allow to cool.
+8. While the samples are cooling, prepare KingFisher plates:
 
-   - Remove the male luer plug from the inlet port.
-   - Remove any liquid from the inlet port using a sterile swab or twisted piece of KimWipe.
-   - Pour beads from ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) into the inlet port. If water has been removed, this should be easily done. If beads get stuck, use a pipette tip to unclog them.
-   - Add 1 mL ZymoBiomics Lysis Buffer or 1:10 dilution of DNA/RNA Shield to the Sterivex using a pipette.
-   - Replace the male luer plug in the inlet port.
-
-4. Number the filters sequentially and use scanner to scan QR codes (cryo-babies labels) onto a google sheet or other form of processing log. If Sterivex do not have QR codes, record the numbers with their corresponding sample names in a google sheet or lab notebook.
-5. Vortex for 40 minutes via Vortex Genie at speed ~6. Make sure the proper adjustable head is secured, which has brackets that fit the Sterivex filters. If brackets are loose and Sterivex are falling out, wrap a small portion of parafilm around the outside of the Sterivex and secure in bracket.
-6. While vortexes are running, prepare KingFisher plates by hand using a repeater pipette:
-
-   - Sample Plates (3): Add 600 µl of MagBinding Buffer and 25 µl of MagBinding beads to each well.
-   - Wash 1: Add 500 µl of ZymoBiomics MagWash 1 to each well.
-   - Wash 2-1: Add 900 µl of ZymoBiomics MagWash 2 to each well.
+   - Sample Plate 1: Add 600 µl of MagBinding Buffer and 25 µl of MagBinding beads to each well.
+   - Sample Plate 2: Add 600 µl of MagBinding Buffer to each well (do not add MagBinding beads to Sample Plate 2; the binding capacity of these beads are high enough that the initial 25ul are plenty).
+   - MagWash 1: Add 500 µl of ZymoBiomics MagWash 1 to each well.
+   - MagWash 2-1: Add 900 µl of ZymoBiomics MagWash 2 to each well.
    - Wash 2-2: Add 900 µl of ZymoBiomics MagWash 2 to each well.
-   - Elution: Add 150 µl of ZymoBiomics RNAse Free Water to each well.
+   - Elution: Add 115 µl of ZymoBiomics RNAse Free Water to each well.
 
-OR
-
-(OPTIONAL) Prepare KingFisher plates with Opentrons OT-2 Pipetting Robot:
-
-   - Turn on OT-2 Robot and computer, open Opentrons program and begin protocol setup.
-   - Place 200 uL filter tips in correct slot of deck.
-   - Carefully fill 12-well reservoir with reagents:
-     - Fill the first two columns 1/2 way full with DNA/RNAse Free Water.
-     - Fill columns five, six, seven and eight completely with MagWash 1.
-     - Place reservoir in correct deck slot of Opentrons. 
-   - Place a deep single-well reservoir in the MagBinding deck slot and carefully fill completely with MagBinding Buffer.
-   - Place a deep single-well reservoir in the MagWash 2 deck slot and carefully fill completely with MagWash 2.
-   - Place sample plates (3), wash plates (3), and elution plate in respective deck slots.
-   - Confirm all plates are correctly placed in deck slots and begin the run.
-   - Once the run is complete, use a repeater pipette to add 25 uL of Magbinding Beads to each well of the 3 sample plates. Make sure to shake or vortex the MagBinding Beads before pipetting to resuspend the beads.
-
-7. After 40 minutes of vortexing, expel lysate from Sterivex filters as follows:
-
-   - Remove the male filter cap and insert a 3-ml syringe into the inlet port (syringe should twist and fit tight).
-   - Gently expel the lysate into the syringe. Some bead carry-over is common.
-   - Transfer lysate to a labeled and sterile 2-ml microcentrifuge tube (liquid and beads will reach ~0.75 ml mark ideally).
-
-8. Centrifuge tubes at ≥ 10,000 x g for 1 min to pellet the beads and leave the sample as supernatant.
-9. Gently pipette 250 uL of sample supernatant into respective well of KingFisher Sample Plate 1, Sample Plate 2 and 3. Repeat for each sample. If there is less than 750 uL of sample lysate in a microcentrifuge tube, attempt to pipette even amounts into each of the 3 sample plates.
+9. After the samples have cooled, centrifuge tubes at ≥ 10,000 x g for 1 min to pellet the beads and leave the sample as supernatant. Return samples to tube rack in the correct order.
+10. Using a 1250 uL Integra 8-channel Adjustable Spacer Pipette, gently pipette 500 uL of sample supernatant and dispense 250 uL into its respective well for KingFisher Sample Plate 1, and Sample Plate 2. Repeat for each column. Alternatively, this can be done on a sample by sample basis if no adjustable spacer pipette is available.
 10. Turn on the KingFisher instrument and computer and open up the BindIt software for KingFisher.
-11. Choose correct protocol for a 3-plate run.
-12. Press start and save a new run file (you can create a new file or save over a previous file that used the same protocol).
-13. Follow along with instructions on the KingFisher screen to load the appropriate plates onto the KingFisher carousel and ensure all plates are in the correct position. Once the last plate has been added, the run will begin.
-14. Run will last ~1hr 15min for a 3-plate protocol.
-15. Once the run is complete, discard the wash, sample and tip plates. DO NOT THROW OUT ELUTION PLATE.
-16. Transfer samples in Elution plate (~150 uL per well) to a permanent 96-well PCR plate for long term storage of DNA at –20 to –80 °C.
-
-   - Specific to NOAA/AOML: Transfer 50 uL of sample to a 96-well PCR plate labeled "Working Stock", another 50 uL of sample to a 96-well plate labeled "Archive 1", and the remainder 50 uL of sample to a third 96-well plate labeled "Archive 2". (see quality control for more information)
-
+11. Choose correct protocol for a 2-plate run.
+12. Press start and save a new run file.
+13. Follow along with instructions on the KingFisher screen to load the appropriate plates onto the KingFisher carousel and ensure all plates are in the correct position (including the tip-comb plate). Once the last plate has been added, the run will begin.
+14. Run will last ~1hr 5min for a 2-plate protocol.
+15. Once the run is complete, appropriately discard the wash, sample, and tip plates. DO NOT THROW OUT ELUTION PLATE.
+16. Transfer samples in Elution plate (~115 uL per well) and split between two permanent 96-well PCR plates (one for lab use and one to archive) for long term storage of DNA at –80 °C. Make sure to keep the samples in the correct sample template order. Seal the plates with the heat sealer
 17. Turn off KingFisher instrument and computer.
 
 ### Quality control
 
-- An extraction blank (negative control) is included in every extraction set (93 samples + 1 extraction blank). All samples and controls are then quantified to confirm DNA concentration. Samples are also PCR amplified with a NTC and positive controls (Zymo Mock Community).
-- Specific to NOAA/AOML: Extracted samples are transferred into 3 aliquots stored at -20°C: a working stock for use in lab (~50 uL), Archive 1 (~50 uL), and Archive 2 (~50 uL). 
+- An extraction blank (negative control) is included in every extraction set (91 samples + 6 extraction blanks). All samples and controls are then quantified to confirm DNA concentration. Samples are also PCR amplified with a NTC and positive controls.
 
 ### Basic troubleshooting guide
-
-- Issue 1: There have been issues with cracks in the ring around the inlet ports of Sterivex (usually only one side) and leaks occurring after thawing.
-   - Solution: To make the Sterivex usable, wipe off excess leakage/condensation on the outside of the Sterivex using a KimWipe and firmly press putty into the concave ring surrounding the inlet ports of the Sterivex. Then use parafilm to tightly wrap the areas where putty was applied. 
-- Issue 2: Depending on the type of bracket used on Vortex Genies, Sterivex may fall out of the brackets as soon as vortexes are turned on.
-   - Solution: Use a KimWipe to wipe off excess condensation on the Sterivex then wrap a small strip of parafilm around the outside of the Sterivex and clip back into the bracket.
-- Issue 3: (Opentrons OT-2 Robot) Occasionally the Opentrons OT-2 Robot will have an issue with dispensing liquid because of bubbling occurring inside the tips dispensing MagBinding buffer due to the "soapy" nature of the solution. 
-   - Solution: Press the "Pause" button on the computer and replace the bubbly tip manually with gloved hands. Then unpause the run and watch to see if the tip correctly dispenses MagBinding buffer. If a sample plate has empty wells, use a pipette to manually add MagBinding buffer after the plate comes off the Opentrons.
+Not applicable.
 
 ## REFERENCES
 Not applicable.
