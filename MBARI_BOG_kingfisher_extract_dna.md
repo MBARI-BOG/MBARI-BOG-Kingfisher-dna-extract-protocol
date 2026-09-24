@@ -202,6 +202,7 @@ Extracting DNA from 91 25 mm PVDF/GFF samples takes about 5 hours ([300](time_re
   
 #### Extraction
 Sample Lysis (day 1)
+
 1. Remove preserved filter from freezer, order in tube rack based on the template, and bring to room temperature.
 2. Make sure caps are tightly sealed. Transfer samples to the Tissuelyser adapters (24 per adapter) and homogenize samples at 30 hz for 2 minutes. (This will be done in two batches).
 3. After homogenization, centrifuge the DNA/RNA Shield collection tubes (samples) at ≥ 10,000xg for 1 minute.
@@ -210,6 +211,7 @@ Sample Lysis (day 1)
 6. Place sample tubes in a secured rack and incubate at 55 C overnight with a slow rotation.
 
 Run Kingfisher (day 2)
+
 7. Take samples out of the incubator and allow to cool.
 8. While the samples are cooling, prepare KingFisher plates:
 
