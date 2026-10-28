@@ -39,7 +39,7 @@ pool_dna_num: not applicable
 nucl_acid_ext_method_additional: not applicable
 ---
 
-# PROTOCOL WRITING IN PROGRESS
+
 # Environmental DNA (eDNA) Extraction using KingFisher
 ## PROTOCOL INFORMATION
 
@@ -79,7 +79,6 @@ nucl_acid_ext_method_additional: not applicable
 | PROTOCOL NAME | LINK | VERSION | RELEASE DATE |
 | ------------- | ------------ | ------------ | ---------- |
 | Environmental DNA (eDNA) 12S Metabarcoding PCR Protocol (with Platinum SuperFi II Taq) V.3 [Previous protocol] |  [https://github.com/MBARI-BOG/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol/blob/main/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol.md](https://github.com/MBARI-BOG/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol/blob/main/MBARI-BOG-12S-superfiII-metabarcoding-pcr-protocol.md) | 3.0 | yyyy-mm-dd   | Internal      |
-| Content Cell  | Content Cell | Content Cell | yyyy-mm-dd   | Content Cell      |
 
 #### External Protocols
 
@@ -126,7 +125,7 @@ This protocol is optimized for high throughput DNA extractions of flat PVDF & GF
 
 ### Spatial coverage and environment(s) of relevance
 
-This protocol has been used to extract DNA from thousands of [sea water](environmental_medium) eDNA samples taken from stations off of South Florida coasts (Atlantic Ocean and Gulf of Mexico). Sample collection depths range from 1m to 200m in the epipelagic zone (marine photic zone [ENVO:00000209]).
+This protocol has been used to extract DNA from thousands of [sea water](environmental_medium) eDNA samples taken from stations off of Monterey Bay, California. Sample collection depths range from 1m to 200m in the epipelagic zone (marine photic zone [ENVO:00000209]).
 
 ## PERSONNEL REQUIRED
 
